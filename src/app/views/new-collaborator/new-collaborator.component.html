@@ -1,0 +1,65 @@
+<app-header></app-header>
+<div class="container">
+    <h1>Novo colaborador</h1>
+    <form [formGroup]="formCollaborator">
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput placeholder="Nome" formControlName="nome">
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>CPF</mat-label>
+                <input type="text" matInput placeholder="CPF" formControlName="cpf">
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Data de Nascimento</mat-label>
+                <input type="date" matInput placeholder="Data de Nascimento" formControlName="dataNascimento">
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Cargo</mat-label>
+                <input type="text" matInput placeholder="Cargo" formControlName="cargo">
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Setor</mat-label>
+                <input type="text" matInput placeholder="Setor" formControlName="setor">
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Estado</mat-label>
+                <input type="text" matInput placeholder="Estado" formControlName="estado">
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Cidade</mat-label>
+                <input type="text" matInput placeholder="Cidade" formControlName="cidade">
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Remuneração (R$)</mat-label>
+            <input type="number" matInput placeholder="Remuneração (R$)" formControlName="remuneracao">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput placeholder="E-mail" formControlName="email">
+        </mat-form-field>
+
+        <label for="foto">Selecione uma foto</label>
+        <input type="file" class="upload-photo" (change)="uploadFile($event)">
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoadUpload"></mat-progress-bar>
+
+        <div class="double-width">
+            <button class="full-width btn-submit" mat-raised-button (click)="createCollaborator()">Cadastrar</button>
+            <a class="full-width btn-close" mat-raised-button routerLink="/dashboard">Cancelar</a>
+        </div>
+    </form>
+</div>
