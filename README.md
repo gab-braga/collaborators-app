@@ -1,27 +1,20 @@
-# AppCollaborators
+# Collaborators
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Descrição
+Collaborators é um aplicativo para controle e manipulação de informações de funcionários, de forma prática e simples. Ele possibilita o cadastrado e a visualização de funcionários. Por meio dele também é possível editar e excluir os dados.
 
-## Development server
+## Tecnologias
+* Angular
+* Angular CLI
+* Angular Material
+* Firebase
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Visualização
+# Home
+![collaborators1](https://user-images.githubusercontent.com/66652642/209035132-6e5640aa-9392-4d63-bb98-0fcb65c6e873.PNG)
+# Painel de Controle
+![collaborators2](https://user-images.githubusercontent.com/66652642/209035134-66ee227a-87a0-4164-ac81-4e6c741a8ce1.PNG)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Servidor de Desenvolvimento
+Ao clonar o repositório, execute `npm install` para instalar as depências necessárias.
+Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`.
